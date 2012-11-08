@@ -45,6 +45,10 @@ typedef enum
     PageControlStyleThumb = 5
 } PageControlStyle;
 
+@protocol StyledPageControlDelegate <NSObject>
+- (void)moveToPage:(NSInteger)page;
+@end
+
 @interface StyledPageControl : UIControl
 @property (nonatomic) UIColor *coreNormalColor, *coreSelectedColor;
 @property (nonatomic) UIColor *strokeNormalColor, *strokeSelectedColor;
@@ -54,6 +58,7 @@ typedef enum
 @property (nonatomic, assign) int strokeWidth, diameter, gapWidth;
 @property (nonatomic) UIImage *thumbImage, *selectedThumbImage;
 @property (nonatomic) NSMutableDictionary *thumbImageForIndex, *selectedThumbImageForIndex;
+@property (unsafe_unretained, nonatomic) id<StyledPageControlDelegate> theDelgate;
 
 - (void)setThumbImage:(UIImage *)aThumbImage forIndex:(NSInteger)index;
 - (UIImage *)thumbImageForIndex:(NSInteger)index;

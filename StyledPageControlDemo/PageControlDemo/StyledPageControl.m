@@ -105,6 +105,11 @@
             }
         }
     }
+    
+    if (_theDelgate && [_theDelgate respondsToSelector:@selector(moveToPage:)]) {
+        [_theDelgate moveToPage:self.currentPage];
+    }
+    
     [self setNeedsDisplay];
     [self sendActionsForControlEvents:UIControlEventValueChanged];
 }
