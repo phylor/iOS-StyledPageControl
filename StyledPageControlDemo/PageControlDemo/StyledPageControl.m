@@ -124,7 +124,7 @@
     if (self.coreSelectedColor) coreSelectedColor = self.coreSelectedColor;
     else
     {
-        if (self.pageControlStyle==PageControlStyleStrokedCircle || self.pageControlStyle==PageControlStyleWithPageNumber)
+        if (self.pageControlStyle==PageControlStyleStrokedSquare || self.pageControlStyle==PageControlStyleStrokedCircle || self.pageControlStyle==PageControlStyleWithPageNumber)
         {
             coreSelectedColor = COLOR_GRAYISHBLUE;
         }
@@ -151,7 +151,7 @@
     if (self.strokeSelectedColor) strokeSelectedColor = self.strokeSelectedColor;
     else
     {
-        if (self.pageControlStyle==PageControlStyleStrokedCircle || self.pageControlStyle==PageControlStyleWithPageNumber)
+        if (self.pageControlStyle==PageControlStyleStrokedSquare || self.pageControlStyle==PageControlStyleStrokedCircle || self.pageControlStyle==PageControlStyleWithPageNumber)
         {
             strokeSelectedColor = COLOR_GRAYISHBLUE;
         }
@@ -250,6 +250,22 @@
             {
                 CGContextSetStrokeColorWithColor(myContext, [strokeNormalColor CGColor]);
                 CGContextStrokeEllipseInRect(myContext, CGRectMake(x,(self.frame.size.height-diameter)/2,diameter,diameter));
+            }
+        }
+        else if (self.pageControlStyle==PageControlStyleStrokedSquare)
+        {
+            CGContextSetLineWidth(myContext, self.strokeWidth);
+            if (i==self.currentPage)
+            {
+                CGContextSetFillColorWithColor(myContext, [coreSelectedColor CGColor]);
+                CGContextFillRect(myContext, CGRectMake(x,(self.frame.size.height-diameter)/2,diameter,diameter));
+                CGContextSetStrokeColorWithColor(myContext, [strokeSelectedColor CGColor]);
+                CGContextStrokeRect(myContext, CGRectMake(x,(self.frame.size.height-diameter)/2,diameter,diameter));
+            }
+            else
+            {
+                CGContextSetStrokeColorWithColor(myContext, [strokeNormalColor CGColor]);
+                CGContextStrokeRect(myContext, CGRectMake(x,(self.frame.size.height-diameter)/2,diameter,diameter));
             }
         }
         else if (self.pageControlStyle==PageControlStyleWithPageNumber)
