@@ -9,7 +9,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "StyledPageControl"
-  s.version          = "1.2"
+  s.version          = "1.1"
   s.summary          = "Customizable PageControl for iOS."
   s.description      = <<-DESC
                        * 5 Styles
