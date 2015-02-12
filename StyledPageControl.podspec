@@ -9,7 +9,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "StyledPageControl"
-  s.version          = "1.0-1.1"
+  s.version          = “1.2”
   s.summary          = "Customizable PageControl for iOS."
   s.description      = <<-DESC
                        * 5 Styles
@@ -23,7 +23,7 @@ Pod::Spec.new do |s|
   s.homepage         = "https://github.com/cielliang/iOS-StyledPageControl"
   # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license          = 'MIT'
-  s.author           = { "hongcheng" => "hongcheng@gmail.com", "Weiyin LIANG" => "weiyin.liang@gmail.com" }
+  s.author           = { "hongcheng" => "hongcheng@gmail.com", "Weiyin LIANG" => "weiyin.liang@gmail.com"}
   s.source           = { :git => "https://github.com/cielliang/iOS-StyledPageControl.git", :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
