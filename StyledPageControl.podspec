@@ -31,9 +31,9 @@ Pod::Spec.new do |s|
   s.requires_arc = true
 
   s.source_files = 'StyledPageControlDemo/PageControlDemo/StyledPageControl.{h,m}'
-  s.resource_bundles = {
-    'StyledPageControl' => ['StyledPageControlDemo/PageControlDemo/Resources/*.png']
-  }
+  # s.resource_bundles = {
+  #   'StyledPageControl' => ['StyledPageControlDemo/PageControlDemo/Resources/*.png']
+  # }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   s.frameworks = 'UIKit'
