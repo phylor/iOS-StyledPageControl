@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>BAD324BB-56D0-48BD-9D75-E9DDEDD2A082</string>
+	<key>IDESourceControlProjectName</key>
+	<string>PageControlDemo</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>358C6CC55F122FF710788F253E24DC04DC4563D2</key>
+		<string>https://github.com/sudeepjaiswal/iOS-StyledPageControl.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>StyledPageControlDemo/PageControlDemo.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>358C6CC55F122FF710788F253E24DC04DC4563D2</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/sudeepjaiswal/iOS-StyledPageControl.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>358C6CC55F122FF710788F253E24DC04DC4563D2</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>358C6CC55F122FF710788F253E24DC04DC4563D2</string>
+			<key>IDESourceControlWCCName</key>
+			<string>iOS-StyledPageControl</string>
+		</dict>
+	</array>
+</dict>
+</plist>

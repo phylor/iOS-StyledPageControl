@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6BE555061A8CADF500F63ED3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6BE555051A8CADF500F63ED3 /* Images.xcassets */; };
 		F84A251214D6E6270057C3A5 /* pagecontrol-thumb-selected.png in Resources */ = {isa = PBXBuildFile; fileRef = F84A250E14D6E6270057C3A5 /* pagecontrol-thumb-selected.png */; };
 		F84A251314D6E6270057C3A5 /* pagecontrol-thumb-selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F84A250F14D6E6270057C3A5 /* pagecontrol-thumb-selected@2x.png */; };
 		F84A251414D6E6270057C3A5 /* pagecontrol-thumb-normal.png in Resources */ = {isa = PBXBuildFile; fileRef = F84A251014D6E6270057C3A5 /* pagecontrol-thumb-normal.png */; };
@@ -27,6 +28,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6BE555051A8CADF500F63ED3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		F84A250E14D6E6270057C3A5 /* pagecontrol-thumb-selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "pagecontrol-thumb-selected.png"; path = "Resources/pagecontrol-thumb-selected.png"; sourceTree = "<group>"; };
 		F84A250F14D6E6270057C3A5 /* pagecontrol-thumb-selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "pagecontrol-thumb-selected@2x.png"; path = "Resources/pagecontrol-thumb-selected@2x.png"; sourceTree = "<group>"; };
 		F84A251014D6E6270057C3A5 /* pagecontrol-thumb-normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "pagecontrol-thumb-normal.png"; path = "Resources/pagecontrol-thumb-normal.png"; sourceTree = "<group>"; };
@@ -108,6 +110,7 @@
 				F8B2E755137ED40800338230 /* PageControl */,
 				F8B2E742137ED3C500338230 /* iPhone */,
 				F8B2E749137ED3C500338230 /* iPad */,
+				6BE555051A8CADF500F63ED3 /* Images.xcassets */,
 				F8B2E737137ED3C500338230 /* Supporting Files */,
 			);
 			path = PageControlDemo;
@@ -183,7 +186,7 @@
 		F8B2E723137ED3C400338230 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0440;
+				LastUpgradeCheck = 0610;
 				ORGANIZATIONNAME = "BuUuK Pte Ltd";
 			};
 			buildConfigurationList = F8B2E726137ED3C400338230 /* Build configuration list for PBXProject "PageControlDemo" */;
@@ -209,6 +212,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F8B2E73B137ED3C500338230 /* InfoPlist.strings in Resources */,
+				6BE555061A8CADF500F63ED3 /* Images.xcassets in Resources */,
 				F8B2E748137ED3C500338230 /* MainWindow_iPhone.xib in Resources */,
 				F8B2E74F137ED3C500338230 /* MainWindow_iPad.xib in Resources */,
 				F84A251214D6E6270057C3A5 /* pagecontrol-thumb-selected.png in Resources */,
@@ -268,7 +272,6 @@
 		F8B2E750137ED3C500338230 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -278,6 +281,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -286,7 +290,6 @@
 		F8B2E751137ED3C500338230 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_VERSION = com.apple.compilers.llvmgcc42;
@@ -303,6 +306,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_OBJC_MISSING_PROPERTY_SYNTHESIS = NO;
 				COPY_PHASE_STRIP = NO;
@@ -321,6 +326,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_OBJC_MISSING_PROPERTY_SYNTHESIS = NO;
 				COPY_PHASE_STRIP = YES;
