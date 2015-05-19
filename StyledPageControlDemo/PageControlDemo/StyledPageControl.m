@@ -407,4 +407,9 @@
     return aSelectedThumbImage;
 }
 
+- (CGSize)sizeThatFits:(CGSize)size {
+    CGFloat controlSize = _diameter + _strokeWidth;
+    return CGSizeMake(_numberOfPages * controlSize + (_numberOfPages - 1) * _gapWidth, controlSize);
+}
+
 @end
